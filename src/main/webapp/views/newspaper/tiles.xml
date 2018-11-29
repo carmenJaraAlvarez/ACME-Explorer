@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- 
+ * tiles.xml
+ *
+ * Copyright (C) 2017 Universidad de Sevilla
+ * 
+ * The use of this project is hereby constrained to the conditions of the 
+ * TDG Licence, a copy of which you may download from 
+ * http://www.tdg-seville.info/License.html
+ -->
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+       
+<tiles-definitions>
+
+	<definition name="newspaper/publicList" extends="master.page">	
+		<put-attribute name="title" value="Newspapers" />
+		<put-attribute name="body" value="/views/newspaper/list.jsp" />
+	</definition>
+
+	<definition name="newspaper/adminList" extends="master.page">	
+		<put-attribute name="title" value="All newspapers" />
+		<put-attribute name="body" value="/views/newspaper/list.jsp" />
+	</definition>
+	
+	<definition name="newspaper/taboo" extends="master.page">	
+		<put-attribute name="title" value="Taboo newspapers" />
+		<put-attribute name="body" value="/views/newspaper/list.jsp" />
+	</definition>
+	
+	<definition name="newspaper/myList" extends="master.page">	
+		<put-attribute name="title" value="My Newspapers" />
+		<put-attribute name="body" value="/views/newspaper/list.jsp" />
+	</definition>
+	
+	<definition name="newspaper/display" extends="master.page">	
+		<put-attribute name="title" value="Newspaper" />
+		<put-attribute name="body" value="/views/newspaper/display.jsp" />
+	</definition>
+	
+	<definition name="newspaper/subscription" extends="master.page">	
+		<put-attribute name="title" value="Subscription" />
+		<put-attribute name="body" value="/views/newspaper/subscription.jsp" />
+	</definition>
+	
+	<definition name="newspaper/success" extends="master.page">	
+		<put-attribute name="title" value="Successful operation" />
+		<put-attribute name="body" value="/views/newspaper/result.jsp" />
+	</definition>
+	
+	<definition name="newspaper/error" extends="master.page">	
+		<put-attribute name="title" value="An error has occurred" />
+		<put-attribute name="body" value="/views/newspaper/result.jsp" />
+	</definition>
+	
+	<definition name="newspaper/create" extends="master.page">	
+		<put-attribute name="title" value="Newspaper edition" />
+		<put-attribute name="body" value="/views/newspaper/edit.jsp" />
+	</definition>
+			<definition name="newspaper/agentListWith" extends="master.page">	
+		<put-attribute name="title" value="Newspapers with my advertisements" />
+		<put-attribute name="body" value="/views/newspaper/list.jsp" />
+	</definition>
+		<definition name="newspaper/agentListWithout" extends="master.page">	
+		<put-attribute name="title" value="Newspapers without my advertisements" />
+		<put-attribute name="body" value="/views/newspaper/list.jsp" />
+	</definition>
+	
+</tiles-definitions>
